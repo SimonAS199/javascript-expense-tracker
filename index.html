@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expanse Tracker</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+    <div id="logo">
+        <h1>Expanse Tracker</h1>
+    </div>
+
+    <div id="descriptionGrid">
+
+        <label for="description">Description:</label>
+        <input type="text" id="description">
+
+    </div>
+
+    <div id="dateGrid">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+
+    </div>
+
+    <div id="amountGrid">
+
+        <label for="amount">Amount:</label>
+        <input type="number" min="0" id="amount">
+
+    </div>
+
+    <div id="buttonGrid">
+
+        <button id="addButton" onmousedown="scaleBtnDown()" onmouseup="scaleBtnUp()">Add Expense</button>
+
+    </div>
+
+</header>
+
+<main>
+
+    <table id="expanseTable">
+
+        <tr id="headRow">
+
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Delete</th>
+
+        </tr>
+
+    </table>
+
+</main>
+
+</body>
+
+<script type="text/javascript" rel="script" src="main.js"></script>
+</html>
